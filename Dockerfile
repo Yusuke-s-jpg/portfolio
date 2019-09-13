@@ -15,6 +15,7 @@ RUN apt-get update && \
     sqlite3 \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
+    
 
 ADD Gemfile      $HOME/Gemfile
 ADD Gemfile.lock $HOME/Gemfile.lock
