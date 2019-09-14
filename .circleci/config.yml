@@ -28,7 +28,7 @@ workflows:
   version: 2
   build_rspec_deploy:
     jobs:
-      -build
+      - build
       - rspec
           requires:
             - build
