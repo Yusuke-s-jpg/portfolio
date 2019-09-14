@@ -29,8 +29,6 @@ workflows:
     jobs:
       - build
       - rspec
-          requires:
-            - build
       - deploy:
           requires:
             - rspec
