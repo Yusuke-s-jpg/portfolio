@@ -5,15 +5,14 @@ jobs:
       - image: circleci/ruby:2.6
     steps:
       - checkout
-      - run: bundle install
+      #- run: bundle install
 
-  rspec:
-    docker:
-      - image: circleci/ruby:2.6
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - run: bundle exec rspec
+  #rspec:
+  #  docker:
+  #    - image: circleci/ruby:2.6
+  #  steps:
+  #    - checkout
+  #    - run: bundle exec rspec
 
   deploy:
     docker:
@@ -30,12 +29,12 @@ workflows:
   build_rspec_deploy:
     jobs:
       - build
-      - rspec:
-          requires:
-            - build
+      #- rspec:
+          #requires:
+            #- build
       - deploy:
           requires:
-            - rspec
+            - build
           filters:
               branches:
                 only:
