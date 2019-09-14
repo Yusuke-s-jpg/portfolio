@@ -29,7 +29,7 @@ workflows:
   build_rspec_deploy:
     jobs:
       - build
-      - rspec
+      - rspec:
           requires:
             - build
       - deploy:
