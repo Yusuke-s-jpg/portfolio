@@ -28,9 +28,12 @@ workflows:
   build_rspec_deploy:
     jobs:
       - build
-      - deploy:
+      - rspec
           requires:
             - build
+      - deploy:
+          requires:
+            - rspec
           filters:
               branches:
                 only:
