@@ -6,10 +6,6 @@ jobs:
     steps:
       - checkout
 
-  rspec:
-    post:
-    - bundle exec rspec
-
   deploy:
     docker:
       - image: buildpack-deps:trusty
