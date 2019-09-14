@@ -5,9 +5,13 @@ jobs:
       - image: circleci/ruby:2.6
     steps:
       - checkout
-      - run: bundle install
-      - run: rake db:create
-      - run: rake db:migrate
+      #- run: bundle install
+
+  rspec:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - run: bundle exec rspec
 
   deploy:
     docker:
