@@ -5,12 +5,12 @@ jobs:
       - image: circleci/ruby:2.6
     steps:
       - checkout
-      - run: bundle install
 
   rspec:
     docker:
       - image: circleci/ruby:2.6
     steps:
+      - run: bundle install
       - run: bundle exec rspec
 
   deploy:
@@ -27,10 +27,7 @@ workflows:
   version: 2
   build_rspec_deploy:
     jobs:
-      - build
       - rspec
-          requires:
-            - build
       - deploy:
           requires:
             - rspec
