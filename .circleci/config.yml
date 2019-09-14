@@ -5,7 +5,7 @@ jobs:
       - image: circleci/ruby:2.6
     steps:
       - checkout
-      - run: echo "Hello World!"
+      - run: bundle install
 
   deploy:
     docker:
