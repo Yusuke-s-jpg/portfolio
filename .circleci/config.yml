@@ -21,6 +21,7 @@ jobs:
       - checkout
       - run:
           name: Rspec
+          command: bundle install
           command: bundle exec rspec
 
   deploy:
