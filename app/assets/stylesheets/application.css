@@ -15,10 +15,35 @@
  */
 body{
   margin: 0px;
+  padding: 0px;
 }
 
 header{
   height: 50px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   background-color: #000000;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: serif;
+}
+
+.header-left{
+  float: left;
+  padding-left: 40px;
+  padding-top: 12px;
+}
+
+.header-right ul{
+  margin: 0px;
+  padding-right: 20px;
+}
+
+.header-right li{
+  float: right;
+  padding-top: 12px;
+  padding-right: 20px;
+  list-style: none;
 }
