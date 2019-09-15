@@ -7,7 +7,9 @@ RSpec.describe User, type: :model do
       name: "example",
       email: "example",
       password: "example",
+      image_name: "example"
     )
     expect(user.name).to eq "example"
   end
+  
 end

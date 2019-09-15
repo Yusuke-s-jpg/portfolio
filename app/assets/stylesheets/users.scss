@@ -30,7 +30,6 @@
 
 .user-form input:focus{
   border-bottom: 2px solid #c0c0c0;
-  outline: none;
 }
 
 .user-form-btn{
@@ -49,4 +48,19 @@
   color: #000000;
   font-size: 15px;
   padding-top: 20px;
+}
+
+.user-form img{
+  float: left;
+}
+
+.name-email li{
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.show-user-edit{
+  padding-top: 70px;
 }

@@ -1,0 +1,18 @@
+<div class="form-background">
+  <div class="user-form">
+    <%= form_tag("/users/update/#{@user.id}") do %>
+         <h1>Edit</h1>
+         <% @user.errors.full_messages.each do |message| %>
+           <div class="form-error">
+             <%= message %>
+           </div>
+         <% end %>
+      <p>Your photo</p>
+      <input name="photo" type="file" class="cursor">
+      <input name="name" value="<%= @user.name %>">
+      <br/><input name="email" value="<%= @user.email %>">
+      <br/><input name="password" placeholder="Password">
+      <br/><input type="submit" value="EDIT" class="user-form-btn">
+    <% end %>
+  </div>
+</div>

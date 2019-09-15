@@ -26,6 +26,3 @@ ADD ./ $HOME
 COPY ./ $HOME
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
-
-RUN rake db:create
-RUN rake db:migrate

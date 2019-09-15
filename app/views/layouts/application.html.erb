@@ -18,7 +18,7 @@
         <div class="header-right">
           <ul>
             <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
-            <li><%= link_to( "My Page", "/users/new", {class: "header-link"} ) %></li>
+            <li><%= link_to( "My Page", "/users/#{session[:user_id]}", {class: "header-link"} ) %></li>
           </ul>
         </div>
       <% else %>
