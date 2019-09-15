@@ -1,3 +1,52 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-background{
+  height: 900px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.user-form{
+  position: absolute;
+  top: 200px;
+  left: 460px;
+  width: 450px;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px #c1ced7;
+}
+
+.user-form input{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  font-family: 'Open Sans', sans-serif;
+  height: 50px;
+}
+
+.user-form input:focus{
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.user-form-btn{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.user-form-btn:hover{
+  cursor: pointer;
+  background: #C0C0C0;
+  transition: background 0.3s ease-in-out;
+}
+
+.create-account{
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  padding-top: 20px;
+}

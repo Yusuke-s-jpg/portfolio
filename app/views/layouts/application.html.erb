@@ -12,14 +12,28 @@
   <body>
     <header>
       <div class="header-left">
-        Travel Hub
+        <%= link_to( "Travel Hub" , "/", {class: "header-link"} ) %>
       </div>
-      <div class="header-right">
-        <ul>
-          <li>Sign In</li>
-          <li>Sign Up</li>
-        </ul>
-      </div>
+      <% if session[:user_id] %>
+        <div class="header-right">
+          <ul>
+            <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
+            <li><%= link_to( "My Page", "/users/new", {class: "header-link"} ) %></li>
+          </ul>
+        </div>
+      <% else %>
+        <div class="header-right">
+          <ul>
+            <li><%= link_to( "Sign In", "/users/login", {class: "header-link"} ) %></li>
+            <li><%= link_to( "Sign Up", "/users/new", {class: "header-link"} ) %></li>
+          </ul>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="flash">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
     </header>
     <%= yield %>
   </body>
