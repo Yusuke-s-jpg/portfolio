@@ -7,9 +7,46 @@
         <li><%= @user.email %></li>
       </ul>
       <div class="show-user-edit">
-        <%= link_to("EDIT", ("/users/edit/#{@user.id}")) %>
-        <%= link_to("DELETE", ("/users/delete/#{@user.id}"), {method: "post"}) %>
+        <%= link_to( "EDIT", ("/users/edit/#{@user.id}")) %>
+        <%= link_to( "DELETE", ("/users/delete/#{@user.id}"), {method: "post"}) %>
       </div>
     </div>
   </div>
+  <%= link_to( "New Post", "/posts/new", {class: "new-post-btn"}) %>
+  <div class="user-post-index">
+    <% @posts.each do |post| %>
+    <div class="user-post">
+      <div class="mypage-index-left">
+        <img src="<%= "/post_photos/#{post.id}.jpg" %>">
+      </div>
+      <div class="mypage-index-right">
+        <div class="mypage-upper">
+          <h1><%= post.title %></h1>
+          <p><%= post.content %></p>
+        </div>
+        <div class="mypage-lower">
+          <%= post.created_at %>
+          <span class="show-post-edit">
+            <%= link_to("DELETE", ("/posts/delete/#{post.id}"), {method: "post"}) %>
+          </span>
+          <span class="like-feture">
+          <% if session[:user_id] %>
+            <%= Like.where(post_id: post.id).count %>
+            <% if Like.find_by(user_id: @current_user.id, post_id: post.id) %>
+              <%= link_to("/likes/delete/#{post.id}", {method: "post"}) do %>
+              <span class="fa fa-heart like-btn-unlike"></span>
+              <% end %>
+            <% else %>
+              <%= link_to("/likes/create/#{post.id}", {method: "post"}) do %>
+              <span class="fa fa-heart like-btn"></span>
+              <% end %>
+            <% end %>
+          <% end %>
+          </span>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <%= paginate @posts %>
+</div>
 </div>

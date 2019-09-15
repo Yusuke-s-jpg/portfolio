@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -18,7 +19,10 @@
         <div class="header-right">
           <ul>
             <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
-            <li><%= link_to( "My Page", "/users/#{session[:user_id]}", {class: "header-link"} ) %></li>
+            <li>
+              <%= @current_user.name %> :
+              <%= link_to( "My Page", "/users/#{session[:user_id]}", {class: "header-link"} ) %>
+            </li>
           </ul>
         </div>
       <% else %>

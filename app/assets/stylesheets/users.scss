@@ -64,3 +64,41 @@
 .show-user-edit{
   padding-top: 70px;
 }
+
+.user-post-index{
+  position: absolute;
+  top: 720px;
+  left: 300px;
+  height: 1000px;
+  width: 900px;
+}
+
+.user-post{
+  height: 290px;
+  width: 950px;
+  box-shadow: 0 3px 8px #c1ced7;
+  background-color: #ffffff;
+}
+
+.mypage-index-left img{
+  height: 250px;
+  width: 340px;
+  padding: 20px;
+  float: left;
+}
+
+.mypage-index-right{
+  float: left;
+  height: 205px;
+  width: 500px;
+  margin: 20px;
+}
+
+.mypage-upper{
+  height: 170px;
+  width: 100%;
+}
+
+.show-post-edit{
+  padding: 20px;
+}

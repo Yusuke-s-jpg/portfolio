@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+html{
+  height: 100%;
+}
+
 body{
   margin: 0px;
   padding: 0px;
@@ -43,6 +47,8 @@ header{
   padding-top: 12px;
   padding-right: 20px;
   list-style: none;
+  color: #ffffff;
+  font-size: 25px;
 }
 
 .header-link{
@@ -63,4 +69,16 @@ header{
   z-index: 10;
   border-radius: 0 0 2px 2px;
   font-size: 20px;
+}
+
+.like-feture{
+  float: right;
+}
+
+.like-btn {
+  color: #8899a6;
+}
+
+.like-btn-unlike {
+  color: #ff2581;
 }

@@ -5,7 +5,46 @@
       <p>-Place for every traveller-</p>
     </div>
   </div>
-  <div class="home-index">
-    <h1>New Posts</h1>
-  </div>
 </div>
+<div class="contents-middle">
+  <h1>New Posts</h1>
+    <% if @posts %>
+      <% @posts.each do |post| %>
+        <div class="index-post-form">
+          <div class="index-left">
+            <img src="<%= "/post_photos/#{post.id}.jpg" %>">
+          </div>
+          <div class="index-right">
+            <div class="index-right-top">
+              <%= link_to( post.title, "/posts/#{post.id}", {class: "index-post-title"}) %>
+            </div>
+            <div class="index-right-bottom">
+              <img src="<%= "/user_image/#{post.user.image_name}" %>">
+              <span><%= link_to( post.user.name, "/users/#{post.user.id}", {class:"link-to-user"}) %></span>
+              <p>
+                <%= post.created_at %>
+                <span class="like-feture">
+              <% if session[:user_id] %>
+                <%= Like.where(post_id: post.id).count %>
+                <% if Like.find_by(user_id: @current_user.id, post_id: post.id) %>
+                  <%= link_to("/likes/delete/#{post.id}", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn-unlike"></span>
+                  <% end %>
+                <% else %>
+                  <%= link_to("/likes/create/#{post.id}", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn"></span>
+                  <% end %>
+                <% end %>
+              <% else %>
+                <%= Like.where(post_id: post.id).count %>
+                <span class="fa fa-heart like-btn-unlike"></span>
+              <% end  %>
+              </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <% end %>
+      <%= paginate @posts %>
+    </div>
