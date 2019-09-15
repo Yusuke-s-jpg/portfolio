@@ -23,7 +23,7 @@ default: &default
   host: db
   username: postgres
   password:
-    
+
 
 development:
   <<: *default
@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: myapp_production
-  username: myapp
+  username: postgres
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
