@@ -15,7 +15,7 @@
       <div class="header-left">
         <%= link_to( "Travel Hub" , "/", {class: "header-link"} ) %>
       </div>
-      <% if session[:user_id] %>
+      <% if @current_user %>
         <div class="header-right">
           <ul>
             <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
