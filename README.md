@@ -1,24 +1,29 @@
-# README
+アプリ概要
+--------------------------------------------------------------------------
+Travel Hubは、旅行者をメインターゲットにしたブログアプリです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+機能、できること
+--------------------------------------------------------------------------
+・記事投稿、編集、削除機能  
+・記事一覧、詳細表示機能  
+・画像投稿、編集機能  
+・ユーザー登録機能  
+・ログイン機能  
+・パスワード暗号化   
+・アクセス制限機能  
+・ページネーション機能
+・いいね機能   
+・テスト機能  
 
-Things you may want to cover:
+技術、どうやって作ったか
+--------------------------------------------------------------------------
+・Docker  
+・CircleCI(自動デプロイ)  
+・Ruby  
+・Rails  
+・RSpec(テスト)  
+・Heroku  
+・PostgreSQL  
+・bcrypt(パスワード暗号化)  
+・kaminari(ページネーション)  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
