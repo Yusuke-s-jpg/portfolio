@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user, {only: [:show, :edit]}
+  before_action :forbid_login_user, {only: [:new, :create, :login_form, :login]}
+  before_action :ensure_correct_user, {only: [:edit, :update]}
 
   def new
     @user = User.new
@@ -79,4 +82,12 @@ class UsersController < ApplicationController
     flash[:notice] = "You succeeded in delete"
     redirect_to("/")
   end
+
+  def ensure_correct_user
+   if @current_user.id != params[:id].to_i
+     flash[:notice] = "You are not authorized to access this page"
+     redirect_to("/")
+   end
+ end
+ 
 end
