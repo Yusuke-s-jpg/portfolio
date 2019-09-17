@@ -33,8 +33,15 @@ header{
 
 .header-left{
   float: left;
-  padding-left: 40px;
-  padding-top: 12px;
+  line-height: 50px;
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+
+.header-left:hover{
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .header-right ul{
@@ -44,17 +51,24 @@ header{
 
 .header-right li{
   float: right;
-  padding-top: 12px;
+  line-height: 50px;
   padding-right: 20px;
+  padding-left: 20px;
   list-style: none;
   color: #ffffff;
   font-size: 25px;
+  transition: 0.5s;
+}
+
+.header-right li:hover{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .header-link{
   color: #ffffff;
   font-size: 25px;
   font-family: serif;
+  display: block;
   text-decoration: none;
 }
 

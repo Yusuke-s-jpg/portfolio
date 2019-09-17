@@ -20,8 +20,7 @@
           <ul>
             <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
             <li>
-              <%= @current_user.name %> :
-              <%= link_to( "My Page", "/users/#{session[:user_id]}", {class: "header-link"} ) %>
+              <%= link_to( "#{@current_user.name}: My Page", "/users/#{session[:user_id]}", {class: "header-link"} ) %>
             </li>
           </ul>
         </div>
