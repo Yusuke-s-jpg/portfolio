@@ -48,7 +48,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: @current_user.id)
+    @user = User.find_by(id: params[:id])
     @posts = Post.where(user_id: @user.id).page(params[:page]).per(4).order(created_at: :desc)
   end
 
