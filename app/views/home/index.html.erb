@@ -1,3 +1,31 @@
+<div class="signup-modal-wrapper" id="signup-modal">
+  <div class="modal">
+    <div class="close-modal">
+      <i class="fa fa-2x fa-times"></i>
+    </div>
+    <%= form_tag("/users/create") do %>
+      <h1>Sign Up</h1>
+      <input name="name" placeholder="Name">
+      <br/><input name="email" placeholder="Email">
+      <br/><input name="password" placeholder="Password">
+      <p>*Password must be at least 8 characters long</p>
+      <br/><input type="submit" value="SIGN UP" class="user-form-btn">
+    <% end %>
+  </div>
+</div>
+<div class="login-modal-wrapper" id="login-modal">
+  <div class="modal">
+    <div class="close-modal">
+      <i class="fa fa-2x fa-times"></i>
+    </div>
+    <%= form_tag("/users/login") do %>
+      <h1>Log In</h1>
+      <br/><input name="email" placeholder="Email">
+      <br/><input name="password" placeholder="Password">
+      <br/><input type="submit" value="LOG IN" class="user-form-btn">
+    <% end %>
+  </div>
+</div>
 <div class="home-contents">
   <div class="home-image">
     <div class="home-title">

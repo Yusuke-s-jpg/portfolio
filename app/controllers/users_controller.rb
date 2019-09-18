@@ -3,10 +3,6 @@ class UsersController < ApplicationController
   before_action :forbid_login_user, {only: [:new, :create, :login_form, :login]}
   before_action :ensure_correct_user, {only: [:edit, :update]}
 
-  def new
-    @user = User.new
-  end
-
   def create
     @user = User.new(
       name: params[:name],
@@ -19,12 +15,9 @@ class UsersController < ApplicationController
       flash[:notice] = "Welcome to Travel Hub"
       redirect_to("/")
     else
-      render("users/new")
+      flash[:notice] =  "We couldn't create your account"
+      redirect_to("/")
     end
-  end
-
-  def login_form
-    @user = User.new
   end
 
   def login
@@ -35,9 +28,7 @@ class UsersController < ApplicationController
       redirect_to("/")
     else
       flash[:notice] = "We couldn't search for your email or password"
-      @email = params[:email]
-      @password = params[:password]
-      render("users/login_form")
+      redirect_to("/")
     end
   end
 
