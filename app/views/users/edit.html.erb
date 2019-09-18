@@ -9,9 +9,12 @@
          <% end %>
       <p>Select your photo</p>
       <input name="photo" type="file" class="cursor">
+      <p>Name</p>
       <input name="name" value="<%= @user.name %>">
+      <p>Email</p>
       <br/><input name="email" value="<%= @user.email %>">
-      <br/><input name="password" placeholder="Password">
+      <p>Password</p>
+      <br/><input name="password" value="<%= @user.password %>">
       <br/><input type="submit" value="EDIT" class="user-form-btn">
     <% end %>
   </div>
