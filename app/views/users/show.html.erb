@@ -7,12 +7,16 @@
         <li><%= @user.email %></li>
       </ul>
       <div class="show-user-edit">
-        <%= link_to( "EDIT", ("/users/edit/#{@user.id}")) %>
-        <%= link_to( "DELETE", ("/users/delete/#{@user.id}"), {method: "post"}) %>
+        <% if @current_user && @current_user.id == @user.id %>
+          <%= link_to( "EDIT", ("/users/edit/#{@user.id}")) %>
+          <%= link_to( "DELETE", ("/users/delete/#{@user.id}"), {method: "post"}) %>
+        <% end %>
       </div>
     </div>
   </div>
-  <%= link_to( "New Post", "/posts/new", {class: "new-post-btn"}) %>
+  <% if @current_user && @current_user.id == @user.id %>
+    <%= link_to( "New Post", "/posts/new", {class: "new-post-btn"}) %>
+  <% end %>
   <div class="user-post-index">
     <% @posts.each do |post| %>
     <div class="user-post">
