@@ -112,7 +112,7 @@ header{
   height: 50px;
 }
 
-.flash {
+.flash{
   position: absolute;
   top: 50px;
   width: 100%;
@@ -129,10 +129,10 @@ header{
   float: right;
 }
 
-.like-btn {
+.like-btn{
   color: #8899a6;
 }
 
-.like-btn-unlike {
+.like-btn-unlike{
   color: #ff2581;
 }

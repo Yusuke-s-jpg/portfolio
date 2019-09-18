@@ -35,3 +35,17 @@ $(function(){
 $(function(){
   setTimeout("$('.flash').fadeOut('slow')", 2000)
 });
+
+$(function(){
+  $('#about-tab-title').click(function(){
+    $('.index-tab').fadeOut();
+    $('.about-tab').fadeIn();
+  });
+});
+
+$(function(){
+  $('#index-tab-title').click(function(){
+    $('.about-tab').fadeOut();
+    $('.index-tab').fadeIn();
+  });
+});
