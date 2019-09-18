@@ -18,5 +18,20 @@
 //= require jquery_ujs
 
 $(function(){
-  $("#hoge").css("color","yellow");
+  $('#signup-show').click(function(){
+    $('#signup-modal').fadeIn();
+  });
+
+  $('#login-show').click(function(){
+    $('#login-modal').fadeIn();
+  });
+
+  $('.close-modal').click(function() {
+    $('#login-modal').fadeOut();
+    $('#signup-modal').fadeOut();
+  });
+});
+
+$(function(){
+  setTimeout("$('.flash').fadeOut('slow')", 2000)
 });
