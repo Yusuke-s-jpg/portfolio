@@ -52,6 +52,7 @@ class UsersController < ApplicationController
     @user.name = params[:name]
     @user.email = params[:email]
     @user.password = params[:password]
+    @user.save
     image = params[:photo]
     if image
       @user.image_name = "#{@user.id}.jpg"

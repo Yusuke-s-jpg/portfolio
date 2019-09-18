@@ -37,14 +37,14 @@ $(function(){
 });
 
 $(function(){
-  $('#about-tab-title').hover(function(){
+  $('#about-tab-title').click(function(){
     $('.index-tab').fadeOut();
     $('.about-tab').fadeIn();
   });
 });
 
 $(function(){
-  $('#index-tab-title').hover(function(){
+  $('#index-tab-title').click(function(){
     $('.about-tab').fadeOut();
     $('.index-tab').fadeIn();
   });

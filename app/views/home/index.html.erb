@@ -34,7 +34,12 @@
     </div>
   </div>
 </div>
-<h1 id="index-tab-title">New Posts</h1>
+<div class="contents-title">
+  <ul>
+    <li id="index-tab-title">New Posts</li>
+    <li id="about-tab-title">About</li>
+  </ul>
+</div>
 <div class="contents-middle">
   <div class="index-tab">
   <% if @posts %>
@@ -78,9 +83,12 @@
   <%= paginate @posts %>
   </div>
 </div>
-<h1 id="about-tab-title">What is Travel Hub</h1>
 <div class="about">
   <div class="about-tab">
-    Travel Hub is
+    <p>
+      Travel Hub is the place for every traveller!
+      <br/>
+      <br/>You can share your experience, favorite place, and your own story!
+    </p>
   </div>
 </div>
