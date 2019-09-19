@@ -38,10 +38,25 @@
         <li><%= @current_user.email %></li>
       </ul>
       <div class="show-user-edit">
+        <p id="post-show">NEW POST</p>
         <p id="edit-show">EDIT</p>
         <%= link_to( "DELETE", ("/users/delete/#{@current_user.id}"), {method: "post", class: "user-delete"}) %>
       </div>
     </div>
+  </div>
+</div>
+<div class="post-modal-wrapper" id="post-modal">
+  <div class="post-modal">
+    <div class="close-modal">
+      <i class="fa fa-2x fa-times"></i>
+    </div>
+    <%= form_tag("/posts/create", {multipart: true}) do %>
+      <h1>New Post</h1>
+      <input name="photo" type="file" class="cursor">
+      <input name="title" placeholder="Title">
+      <br/><textarea name="content" rows="12" cols="64"></textarea>
+      <br/><input type="submit" value="POST" class="user-form-btn">
+    <% end %>
   </div>
 </div>
 <div class="edit-modal-wrapper" id="edit-modal">
@@ -91,7 +106,7 @@
           </div>
           <div class="index-right-bottom">
             <img src="<%= "/user_image/#{post.user.image_name}" %>">
-            <span><%= link_to( post.user.name, "/users/#{post.user.id}", {class:"link-to-user"}) %></span>
+            <span class="link-to-user"><%= post.user.name %>
             <p>
               <%= post.created_at %>
               <span class="like-feture">

@@ -73,7 +73,8 @@ header{
   text-decoration: none;
 }
 
-.signup-modal-wrapper, .login-modal-wrapper, .user-modal-wrapper, .edit-modal-wrapper{
+.signup-modal-wrapper, .login-modal-wrapper,
+.user-modal-wrapper, .edit-modal-wrapper, .post-modal-wrapper{
   display: none;
   position: fixed;
   top: 0;
@@ -108,6 +109,23 @@ header{
   box-shadow: 0 3px 8px #c1ced7;
 }
 
+.post-modal{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 600px;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px #c1ced7;
+}
+
+.newpost{
+  text-decoration: none;
+  color: #000000;
+}
+
 .fa-times {
   position: absolute;
   top: 12px;
@@ -133,7 +151,19 @@ header{
   font-size: 20px;
 }
 
-#edit-show{
+.post-modal input{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.post-modal textarea{
+  font-size: 15px;
+}
+
+#edit-show, #post-show{
   cursor: pointer;
 }
 
