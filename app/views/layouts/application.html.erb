@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="header-left">
-        <%= link_to( "Travel Hub" , "/", {class: "header-link"} ) %>
+        <%= link_to( "Travel Hub" , home_index_path, {class: "header-link", data: {turbolinks: false}}) %>
       </div>
       <% if @current_user %>
         <div class="header-right">
