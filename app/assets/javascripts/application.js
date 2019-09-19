@@ -26,9 +26,26 @@ $(function(){
     $('#login-modal').fadeIn();
   });
 
+  $('#user-show').click(function(){
+    $('#user-modal').fadeIn();
+  });
+
+  $('#post-show').click(function(){
+    $('#post-modal').fadeIn();
+    $('#user-modal').fadeOut();
+  });
+
+  $('#edit-show').click(function(){
+    $('#edit-modal').fadeIn();
+    $('#user-modal').fadeOut();
+  });
+
   $('.close-modal').click(function() {
     $('#login-modal').fadeOut();
     $('#signup-modal').fadeOut();
+    $('#user-modal').fadeOut();
+    $('#edit-modal').fadeOut();
+    $('#post-modal').fadeOut();
   });
 });
 
