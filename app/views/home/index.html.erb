@@ -66,6 +66,7 @@
     <div class="close-modal">
       <i class="fa fa-2x fa-times"></i>
     </div>
+    <% if @current_user %>
     <%= form_tag("/users/update/#{@current_user.id}", {multipart: true}) do %>
       <h1>Edit</h1>
       <h3>Select your photo</h3>
@@ -77,6 +78,7 @@
       Password
       <br/><input name="password" value="<%= @current_user.password %>">
       <br/><input type="submit" value="EDIT" class="user-form-btn">
+    <% end %>
     <% end %>
   </div>
 </div>
