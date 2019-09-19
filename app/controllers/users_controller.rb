@@ -60,10 +60,11 @@ class UsersController < ApplicationController
       flash[:notice] = "You succeeded in update"
     end
     if @user.save
-      redirect_to("/users/#{@user.id}")
+      flash[:notice] = "You succeeded in update"
+      redirect_to("/")
     else
-      @error_message = "※"
-      render("users/edit")
+      flash[:notice] = "update failed"
+      redirect_to("/")
     end
   end
 
