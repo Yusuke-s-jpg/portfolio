@@ -31,6 +31,7 @@
     <div class="close-modal">
       <i class="fa fa-2x fa-times"></i>
     </div>
+    <% if @current_user %>
     <img src="<%= "/user_image/#{@current_user.image_name}" %>" class="user-form-image">
     <div class="name-email">
       <ul>
@@ -43,6 +44,7 @@
         <%= link_to( "DELETE", ("/users/delete/#{@current_user.id}"), {method: "post", class: "user-delete"}) %>
       </div>
     </div>
+    <% end %>
   </div>
 </div>
 <div class="post-modal-wrapper" id="post-modal">
