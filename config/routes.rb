@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'users/new' => 'users#new'
   get 'users/login' => 'users#login_form'
-  get '/' => 'home#index'
+  get '/' => 'home#index', as: "home/index"
   get 'users/edit/:id' => 'users#edit'
   get 'users/:id' => 'users#show'
 
