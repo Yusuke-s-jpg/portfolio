@@ -3,12 +3,21 @@
 
   }
 
+  .contents-middle{
+    position: absolute;
+    top: 560px;
+    left: 0;
+    height: 1500px;
+    width: 500px;
+    margin: 0px;
+  }
+
   .index-post-form{
     position: absolute;
-    top: 90%;
-    left: 20px;
+    top: 2%;
+    left: 10px;
     height: 350px;
-    width: 78%;
+    width: 500px;
   }
 
   .like-feature{
@@ -18,7 +27,7 @@
   .about-content{
     position: absolute;
     top: 84%;
-    left: 20px;
+    left: 10px;
     height: 340px;
     width: 78%;
     padding: 40px;
