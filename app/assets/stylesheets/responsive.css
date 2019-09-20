@@ -6,14 +6,14 @@
 
   .index-post-form{
     height: 350px;
-    width: 80%;
+    width: 95%;
   }
 
   .about-tab{
     position: absolute;
     top: 90%;
-    height: 240px;
+    height: 350px;
     width: 80%;
-    color: red;
+    padding: 40px;
   }
 }
