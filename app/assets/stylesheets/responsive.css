@@ -1,0 +1,11 @@
+@media(max-width: 670px){
+  .index-post-form{
+    width: 80%;
+  }
+
+  .about-tab{
+    height: 240px;
+    width: 80%;
+    color: red;
+  }
+}
