@@ -1,9 +1,17 @@
 @media(max-width: 670px){
+  .contents-middle{
+    position: absolute;
+    top: 90%;
+  }
+
   .index-post-form{
+    height: 350px;
     width: 80%;
   }
 
   .about-tab{
+    position: absolute;
+    top: 90%;
     height: 240px;
     width: 80%;
     color: red;
