@@ -6,24 +6,28 @@
   .contents-middle{
     position: absolute;
     top: 90%;
-    left: 10;
+    left: 4;
     height: 1500px;
   }
 
   .index-post-form{
     height: 350px;
-    width: 74%;
+    width: 78%;
   }
 
   .like-feature{
     float: none;
   }
 
-  .about-tab{
+  .about-content{
     position: absolute;
-    top: 90%;
-    height: 350px;
-    width: 95%;
+    top: 72%;
+    left: 4%;
+    height: 300px;
+    width: 78%;
     padding: 40px;
+    margin: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px #c1ced7;
   }
 }
