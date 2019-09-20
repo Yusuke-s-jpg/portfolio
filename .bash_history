@@ -11,3 +11,4 @@ ls
 vi new.html.erb
 vim new.html.erb
 exit
+exit
