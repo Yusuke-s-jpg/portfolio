@@ -6,11 +6,17 @@
   .contents-middle{
     position: absolute;
     top: 90%;
+    left: 10;
+    height: 1500px;
   }
 
   .index-post-form{
     height: 350px;
-    width: 95%;
+    width: 74%;
+  }
+
+  .like-feature{
+    float: none;
   }
 
   .about-tab{
