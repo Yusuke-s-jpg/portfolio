@@ -6,7 +6,7 @@
   .contents-middle{
     position: absolute;
     top: 90%;
-    left: 1;
+    left: 25px;
     height: 1500px;
   }
 
@@ -21,9 +21,9 @@
 
   .about-content{
     position: absolute;
-    top: 80%;
-    left: 1;
-    height: 300px;
+    top: 84%;
+    left: 25px;
+    height: 340px;
     width: 78%;
     padding: 40px;
     margin: 40px;
