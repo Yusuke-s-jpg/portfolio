@@ -16,12 +16,13 @@ class PostsController < ApplicationController
     if image
       @post.photo_name = "#{@post.id}.jpg"
       File.binwrite("public/post_photos/#{@post.photo_name}", image.read)
-      flash[:notice] = "You created a new post successfully"
     end
     if @post.save
+      flash[:notice] = "You created a new post successfully"
       redirect_to("/")
     else
-      render("posts/new")
+      flash[:notice] = "You couldn't create a new post"
+      redirect_to("/")
     end
   end
 
@@ -43,5 +44,5 @@ class PostsController < ApplicationController
     redirect_to("/")
   end
  end
- 
+
 end
