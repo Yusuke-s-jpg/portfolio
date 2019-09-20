@@ -3,14 +3,10 @@
 
   }
 
-  .contents-middle{
+  .index-post-form{
     position: absolute;
     top: 90%;
-    left: 25px;
-    height: 1500px;
-  }
-
-  .index-post-form{
+    left: 20px;
     height: 350px;
     width: 78%;
   }
@@ -22,7 +18,7 @@
   .about-content{
     position: absolute;
     top: 84%;
-    left: 25px;
+    left: 20px;
     height: 340px;
     width: 78%;
     padding: 40px;
