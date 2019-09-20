@@ -195,3 +195,19 @@ header{
 .like-btn-unlike{
   color: #ff2581;
 }
+
+footer{
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #000000;
+  z-index: 100;
+}
+
+footer p{
+  float: right;
+  padding-right: 40px;
+  font-size: 20px;
+  color: #ffffff;
+}
