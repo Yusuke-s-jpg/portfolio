@@ -17,17 +17,22 @@
     top: 2%;
     left: 10px;
     height: 350px;
-    width: 500px;
+    width: 315px;
   }
 
   .like-feature{
     float: none;
   }
 
+  .about{
+    height:400px;
+    width: 100%;
+  }
+
   .about-content{
     position: absolute;
     top: 84%;
-    left: 10px;
+    left: 6px;
     height: 340px;
     width: 78%;
     padding: 40px;
