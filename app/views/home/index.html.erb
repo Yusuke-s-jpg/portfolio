@@ -113,7 +113,7 @@
             <span class="link-to-user"><%= post.user.name %>
             <p>
               <%= post.created_at %>
-              <span class="like-feture">
+              <span class="like-feature">
             <% if session[:user_id] %>
               <%= Like.where(post_id: post.id).count %>
               <% if Like.find_by(user_id: @current_user.id, post_id: post.id) %>
