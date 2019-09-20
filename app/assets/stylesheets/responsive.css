@@ -8,7 +8,7 @@
     top: 560px;
     left: 0;
     height: 1500px;
-    width: 500px;
+    width: 350px;
     margin: 0px;
   }
 
@@ -22,11 +22,6 @@
 
   .like-feature{
     float: none;
-  }
-
-  .about{
-    height:400px;
-    width: 100%;
   }
 
   .about-content{
