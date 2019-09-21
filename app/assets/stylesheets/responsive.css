@@ -29,9 +29,7 @@
   }
 
   .index-post-form{
-    position: absolute;
-    top: 1%;
-    left: 25px;
+    margin-left: 22px;
     height: 400px;
     width: 315px;
   }
