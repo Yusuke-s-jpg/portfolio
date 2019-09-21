@@ -77,10 +77,27 @@ header{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.header-link{
+  color: #ffffff;
+  font-size: 25px;
+  font-family: serif;
+  display: block;
+  text-decoration: none;
+}
+
+.header-slide{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  z-index: 10;
+  background-color: #000000;
+  display: none;
+}
+
 .header-right-slide ul{
   margin: 0px;
   padding-right: 20px;
-  display: none;
 }
 
 .header-right-slide li{
@@ -97,14 +114,6 @@ header{
 .header-right-slide li:hover{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.header-link{
-  color: #ffffff;
-  font-size: 25px;
-  font-family: serif;
-  display: block;
-  text-decoration: none;
 }
 
 .signup-modal-wrapper, .login-modal-wrapper,
