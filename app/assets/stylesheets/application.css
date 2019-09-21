@@ -86,8 +86,10 @@ header{
 }
 
 .header-slide{
+  position: absolute;
+  right: 0;
   height: 50px;
-  width: 100%;
+  width: auto;
   position: fixed;
   top: 50px;
   z-index: 10;
