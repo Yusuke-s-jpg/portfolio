@@ -1,6 +1,10 @@
 @media(max-width: 670px){
-  .home-image{
+  .header-left{
+    display: none;
+  }
 
+  .header-right li{
+    float: left;
   }
 
   .contents-middle{
@@ -15,8 +19,8 @@
   .index-post-form{
     position: absolute;
     top: 2%;
-    left: 10px;
-    height: 410px;
+    left: 25px;
+    height: 400px;
     width: 315px;
   }
 
@@ -32,7 +36,7 @@
   .about-content{
     position: absolute;
     top: 86%;
-    left: 8px;
+    left: 6px;
     height: 340px;
     width: 78%;
     padding: 40px;
