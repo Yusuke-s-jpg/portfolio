@@ -1,9 +1,7 @@
 <div class="post-show">
   <% if @post %>
   <div class="post-show-image">
-    <div class="post-show-photo">
-      <img src="<%= "/post_photos/#{@post.id}.jpg" %>">
-    </div>
+    <img src="<%= "/post_photos/#{@post.id}.jpg" %>">    
   </div>
   <div class="post-show-right">
     <div class="post-title">
@@ -12,7 +10,7 @@
     <div class="post-content">
       <p><%= @post.content %></p>
     </div>
-    <div class="post-show-profile"> 
+    <div class="post-show-profile">
     <img src="<%= "/user_image/#{@post.user.image_name}" %>">
     <div class="post-show-profile-right">
     <span><%= @post.user.name %></span>
