@@ -63,11 +63,13 @@
   }
 
   .user-modal{
+    top: 5% !important;
     left: 33px !important;
     width: 310px !important;
   }
 
   .post-modal{
+    top: 10% !important;
     left: 20px !important;
     width: 310px !important;
   }
