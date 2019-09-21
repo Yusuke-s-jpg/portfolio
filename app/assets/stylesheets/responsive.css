@@ -9,10 +9,6 @@
     display: none;
   }
 
-  .header-right-slide{
-    display: block !important;
-  }
-
   .menu-icon{
     display: block !important;
   }
@@ -20,7 +16,7 @@
   .home-title{
     position: absolute;
     top: 120px;
-    left: 150px;
+    left: 60px;
   }
 
   .contents-middle{

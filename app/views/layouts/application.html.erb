@@ -40,6 +40,30 @@
         </div>
       <% end %>
     </header>
+    <div class="header-slide">
+      <% if @current_user %>
+        <div class="header-right-slide">
+          <ul>
+            <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
+            <li id="user-show">
+              <%= @current_user.name %> : My Page
+            </li>
+          </ul>
+        </div>
+      <% else %>
+        <div class="header-right-slide">
+          <ul>
+            <li id="login-show">Log In</li>
+            <li id="signup-show">Sign Up</li>
+          </ul>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="flash">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+    </div>
     <footer>
       <div class="footer-right">
         <p>created by Yusuke Sato</p>
