@@ -39,7 +39,7 @@
         <li><%= @current_user.email %></li>
       </ul>
       <div class="show-user-edit">
-        <p class="post-show">NEW POST</p>
+        <p class="post-show-btn">NEW POST</p>
         <p class="edit-show">EDIT</p>
         <%= link_to( "DELETE", ("/users/delete/#{@current_user.id}"), {method: "post", class: "user-delete"}) %>
       </div>

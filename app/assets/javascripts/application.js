@@ -30,7 +30,7 @@ $(function(){
     $('#user-modal').fadeIn();
   });
 
-  $('.post-show').click(function(){
+  $('.post-show-btn').click(function(){
     $('#post-modal').fadeIn();
     $('#user-modal').fadeOut();
   });

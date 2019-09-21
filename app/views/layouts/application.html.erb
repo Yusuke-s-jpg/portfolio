@@ -21,7 +21,7 @@
         <div class="header-right">
           <ul>
             <li><%= link_to( "Sign Out", "/users/logout", {class: "header-link", method: "post"} ) %></li>
-            <li id="user-show">
+            <li class="user-show">
               <%= @current_user.name %> : My Page
             </li>
           </ul>

@@ -207,7 +207,7 @@ header{
   font-size: 15px;
 }
 
-#edit-show, #post-show, .menu-icon{
+.edit-show, .post-show-btn, .menu-icon{
   cursor: pointer;
 }
 
