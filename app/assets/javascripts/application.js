@@ -18,11 +18,11 @@
 //= require jquery_ujs
 
 $(function(){
-  $('#signup-show').click(function(){
+  $('.signup-show').click(function(){
     $('#signup-modal').fadeIn();
   });
 
-  $('#login-show').click(function(){
+  $('.login-show').click(function(){
     $('#login-modal').fadeIn();
   });
 
@@ -71,10 +71,10 @@ $(function(){
   $('.menu-icon').click(function(){
     if($(this).hasClass('open')){
       $(this).removeClass('open');
-      $('.header-slide').fadeOut();
+      $('.header-slide').slideUp();
     } else {
       $(this).addClass('open');
-      $('.header-slide').fadeIn();
+      $('.header-slide').slideDown();
     }
   });
 });
