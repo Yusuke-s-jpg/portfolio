@@ -52,7 +52,7 @@ header{
   color: white;
   float: right;
   font-size: 25px;
-  padding: 22px;
+  padding: 15px 20px;
   display: none;
 }
 
@@ -73,6 +73,28 @@ header{
 }
 
 .header-right li:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right-slide ul{
+  margin: 0px;
+  padding-right: 20px;
+  display: none;
+}
+
+.header-right-slide li{
+  float: right;
+  line-height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+  color: #ffffff;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.header-right-slide li:hover{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -175,7 +197,7 @@ header{
   font-size: 15px;
 }
 
-#edit-show, #post-show{
+#edit-show, #post-show, .menu-icon{
   cursor: pointer;
 }
 
