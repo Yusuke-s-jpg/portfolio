@@ -66,3 +66,17 @@ $(function(){
     $('.index-tab').fadeIn();
   });
 });
+
+$(function(){
+  $('.menu-icon').click(function(){
+    if($(this).hasClass('open')){
+      $(this).removeClass('open');
+      $('.header-right').fadeOut();
+      $('.header-left').fadeIn();
+    } else {
+      $(this).addClass('open');
+      $('.header-left').fadeOut();
+      $('.header-right').fadeIn();
+    }
+  });
+});

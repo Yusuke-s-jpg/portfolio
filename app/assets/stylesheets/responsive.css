@@ -5,16 +5,22 @@
     padding-right: 5px;
   }
 
-  .menu-icon{
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 22px;
-    display: block;
+  .header-right{
+    display: none;
   }
 
-  .header-right ul{
-    display: none;
+  .header-right-slide{
+    display: block !important;
+  }
+
+  .menu-icon{
+    display: block !important;
+  }
+
+  .home-title{
+    position: absolute;
+    top: 120px;
+    left: 150px;
   }
 
   .contents-middle{
@@ -54,5 +60,4 @@
     background-color: #ffffff;
     box-shadow: 0 3px 8px #c1ced7;
   }
-
 }
