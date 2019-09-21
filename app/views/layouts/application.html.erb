@@ -6,9 +6,9 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -16,6 +16,7 @@
       <div class="header-left">
         <%= link_to( "Travel Hub" , home_index_path, {class: "header-link", data: {turbolinks: false}}) %>
       </div>
+      <span class="fa fa-bars menu-icon"></span>
       <% if @current_user %>
         <div class="header-right">
           <ul>
