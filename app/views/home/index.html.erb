@@ -112,7 +112,7 @@
             <img src="<%= "/user_image/#{post.user.image_name}" %>">
             <span class="link-to-user"><%= post.user.name %>
             <p>
-              <%= post.created_at %>
+              <%= post.created_at.strftime("%Y-%m-%d   %H:%M")  %>
               <span class="like-feature">
             <% if session[:user_id] %>
               <%= Like.where(post_id: post.id).count %>
