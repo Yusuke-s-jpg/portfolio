@@ -183,7 +183,8 @@ header{
   border: none;
   border-bottom: 2px solid #e9e9e9;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   height: 30px;
   font-size: 20px;
 }
@@ -193,6 +194,8 @@ header{
   border: none;
   border-bottom: 2px solid #e9e9e9;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
 }
 
@@ -201,6 +204,8 @@ header{
   border: none;
   border-bottom: 2px solid #e9e9e9;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
 }
 
